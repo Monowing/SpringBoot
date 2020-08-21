@@ -14,7 +14,7 @@ SpringBoot的各种整合
 
 
 
-##一、数据库连接
+## 一、数据库连接
 数据库为mybatis_demo
 
 ###1.建表，创建数据：
@@ -53,7 +53,7 @@ spring:
 ```
 
 
-##二、整合mybatis
+## 二、整合mybatis
 
 ###1.源代码路径
 
@@ -106,7 +106,7 @@ mybatis:
 classpath:mapper/*.xml
 
 
-##三、整合redis
+## 三、整合redis
 
 ###1.源代码路径
 
@@ -170,7 +170,7 @@ spring:
 等情况
 
 
-##四、整合swagger
+## 四、整合swagger
 
 ###1.源代码路径
 
