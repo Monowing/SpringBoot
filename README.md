@@ -154,25 +154,10 @@ spring:
 
 ```
 
-##3.注意
-
-注意添加spring配置的时候，不要多spring字段出来,
-例如数据库连接和redis连接都是spring起头
-请不要出现
-```yaml
-spring:
-    redis:
-      ...    
-spring:
-    datasource:
-      ...
-```
-等情况
-
 
 # 整合swagger
 
-##1.源代码路径
+## 1.源代码路径
 
 com.example.demo.swagger
 
@@ -192,3 +177,44 @@ import com.example.demo.swagger.entity.*;
 ##2.网页地址
 
 查看swagger文档网址:[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
+
+# 整合rabbitmq
+
+## 1.源代码路径
+
+com.example.demo.rabbitmq
+
+```java
+//所有的redis整合的源代码所在的包
+import com.example.demo.rabbitmq.*;
+
+// application文件
+import com.example.demo.rabbitmq.application.*;
+// controller文件
+import com.example.demo.rabbitmq.controller.*;
+// direct文件
+import com.example.demo.rabbitmq.direct.*;
+// fanout文件
+import com.example.demo.rabbitmq.fanout.*;
+// hello文件
+import com.example.demo.rabbitmq.hello.*;
+// topic文件
+import com.example.demo.rabbitmq.topic.*;
+// user文件
+import com.example.demo.rabbitmq.user.*;
+
+```
+
+##2.rabbitmq配置
+
+```yaml
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+```
+
+

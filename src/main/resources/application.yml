@@ -34,6 +34,13 @@ spring:
     # 连接超时时间（毫秒）
     timeout: 1000ms
 
+  #RabbitMQ配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
 
 #mybatis的相关配置
 mybatis:
@@ -43,5 +50,6 @@ mybatis:
   #开启驼峰命名
   configuration:
     map-underscore-to-camel-case: true
+
 
 
