@@ -14,7 +14,7 @@ SpringBoot的各种整合
 
 
 
-# 数据库连接
+# 一、数据库连接
 
 [跳转目录](#目录)
 
@@ -56,7 +56,7 @@ spring:
 ```
 
 
-# 整合mybatis
+# 二、整合mybatis
 
 [跳转目录](#目录)
 
@@ -111,7 +111,7 @@ mybatis:
 classpath:mapper/*.xml
 
 
-# 整合redis
+# 三、整合redis
 
 [跳转目录](#目录)
 
@@ -177,7 +177,7 @@ spring:
 等情况
 
 
-# 整合swagger
+# 四、整合swagger
 
 [跳转目录](#目录)
 
