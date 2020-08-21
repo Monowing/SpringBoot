@@ -4,13 +4,13 @@ SpringBoot的各种整合
 
 # 目录
 
-[一、数据库连接](#数据库连接)
+[一、数据库连接](#一、数据库连接)
 
-[二、整合mybatis](#整合mybatis)
+[二、整合mybatis](#二、整合mybatis)
 
-[三、整合redis](#整合redis)
+[三、整合redis](#三、整合redis)
 
-[四、整合swagger](#整合swagger)
+[四、整合swagger](#四、整合swagger)
 
 
 
