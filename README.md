@@ -1,12 +1,23 @@
 # SpringBoot
 SpringBoot的各种整合
 
-[跳转到个人简介](#个人简介)
 
-## 数据库连接
+##目录结构
+
+[一、数据库连接](#一、数据库连接)
+
+[二、整合mybatis](#二、整合mybatis)
+
+[三、整合redis](#三、整合redis)
+
+[四、整合swagger](#四、整合swagger)
+
+
+
+##一、数据库连接
 数据库为mybatis_demo
 
-###建表，创建数据：
+###1.建表，创建数据：
 
 ```sql
 -- ----------------------------
@@ -30,7 +41,7 @@ INSERT INTO `tb_user` VALUES ('4', '1clg1', '123456');
 INSERT INTO `tb_user` VALUES ('5', 'clg2', '123456');
 
 ```
-###数据库连接配置
+###2.数据库连接配置
 ```yaml
 spring:
   #数据库连接配置
@@ -42,9 +53,12 @@ spring:
 ```
 
 
-##一、整合mybatis
+##二、整合mybatis
 
-###源代码路径com.example.demo.mybatisdemo
+###1.源代码路径
+
+com.example.demo.mybatisdemo
+
 ```java
 //所有的mybatis整合的源代码所在的包
 import com.example.demo.mybatisdemo.*;
@@ -62,7 +76,10 @@ import com.example.demo.mybatisdemo.serviceimpl.*;
 
 ```
 
-###yaml配置文件：application.yml
+###2.yaml配置文件
+
+application.yml
+
 ```yaml
 #mybatis的相关配置
 mybatis:
@@ -74,7 +91,7 @@ mybatis:
     map-underscore-to-camel-case: true
 ```
 
-###启动application添加扫描
+###3.启动application添加扫描
 
 ```java
 
@@ -84,14 +101,17 @@ mybatis:
 
 ```
 
-###mapper文件路径
+###4.mapper文件路径
 
 classpath:mapper/*.xml
 
 
-##二、整合redis
+##三、整合redis
 
-###源代码路径com.example.demo.redisdemo
+###1.源代码路径
+
+com.example.demo.redisdemo
+
 ```java
 //所有的redis整合的源代码所在的包
 import com.example.demo.redisdemo.*;
@@ -105,7 +125,7 @@ import com.example.demo.redisdemo.utils.*;
 
 ```
 
-###redis配置
+###2.redis配置
 ```yaml
 spring:
 
@@ -134,6 +154,8 @@ spring:
 
 ```
 
+###3.注意
+
 注意添加spring配置的时候，不要多spring字段出来,
 例如数据库连接和redis连接都是spring起头
 请不要出现
@@ -148,9 +170,12 @@ spring:
 等情况
 
 
-##三、整合swagger
+##四、整合swagger
 
-###源代码路径com.example.demo.swagger
+###1.源代码路径
+
+com.example.demo.swagger
+
 ```java
 //所有的redis整合的源代码所在的包
 import com.example.demo.swagger.*;
@@ -164,4 +189,6 @@ import com.example.demo.swagger.entity.*;
 
 ```
 
-# 个人简介
+###2.网页地址
+
+查看swagger文档网址:[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
