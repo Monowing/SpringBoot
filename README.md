@@ -2,7 +2,7 @@
 SpringBoot的各种整合
 
 
-##目录结构
+# 目录
 
 [一、数据库连接](#数据库连接)
 
@@ -15,9 +15,12 @@ SpringBoot的各种整合
 
 
 # 数据库连接
+
+[跳转目录](#目录)
+
 数据库为mybatis_demo
 
-##1.建表，创建数据：
+## 1.建表，创建数据：
 
 ```sql
 -- ----------------------------
@@ -41,7 +44,7 @@ INSERT INTO `tb_user` VALUES ('4', '1clg1', '123456');
 INSERT INTO `tb_user` VALUES ('5', 'clg2', '123456');
 
 ```
-##2.数据库连接配置
+## 2.数据库连接配置
 ```yaml
 spring:
   #数据库连接配置
@@ -55,7 +58,9 @@ spring:
 
 # 整合mybatis
 
-##1.源代码路径
+[跳转目录](#目录)
+
+## 1.源代码路径
 
 com.example.demo.mybatisdemo
 
@@ -76,7 +81,7 @@ import com.example.demo.mybatisdemo.serviceimpl.*;
 
 ```
 
-##2.yaml配置文件
+## 2.yaml配置文件
 
 application.yml
 
@@ -91,7 +96,7 @@ mybatis:
     map-underscore-to-camel-case: true
 ```
 
-##3.启动application添加扫描
+## 3.启动application添加扫描
 
 ```java
 
@@ -108,7 +113,9 @@ classpath:mapper/*.xml
 
 # 整合redis
 
-##1.源代码路径
+[跳转目录](#目录)
+
+## 1.源代码路径
 
 com.example.demo.redisdemo
 
@@ -125,7 +132,7 @@ import com.example.demo.redisdemo.utils.*;
 
 ```
 
-##2.redis配置
+## 2.redis配置
 ```yaml
 spring:
 
@@ -155,7 +162,11 @@ spring:
 ```
 
 
+
 # 整合swagger
+
+[跳转目录](#目录)
+
 
 ## 1.源代码路径
 
@@ -174,12 +185,13 @@ import com.example.demo.swagger.entity.*;
 
 ```
 
-##2.网页地址
+## 2.网页地址
 
 查看swagger文档网址:[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 
 # 整合rabbitmq
+[跳转目录](#目录)
 
 ## 1.源代码路径
 
