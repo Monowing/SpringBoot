@@ -4,7 +4,7 @@ server:
 
 spring:
 
-  #数据库连接配置
+  # 数据库连接配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mybatis_demo?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
@@ -50,6 +50,4 @@ mybatis:
   #开启驼峰命名
   configuration:
     map-underscore-to-camel-case: true
-
-
 

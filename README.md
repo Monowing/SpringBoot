@@ -12,6 +12,10 @@ SpringBoot的各种整合
 
 [四、整合swagger](#整合swagger)
 
+[五、自定义注解](#自定义注解)
+
+
+
 
 
 # 数据库连接
@@ -228,5 +232,28 @@ spring:
     username: guest
     password: guest
 ```
+
+# 自定义注解
+
+[跳转目录](#目录)
+
+路径位置：com.example.demo.other.Annotation
+
+## 1.ClassAnnotation
+自定义的类注解
+
+## 2.FieldAnnotation
+自定义的字段注解
+
+## 3.MyAnnotation
+自定义注解
+
+## 4.MyAnnotationClass
+自定义注解类
+
+## 5.MyAnnotationMain
+自定义注解main类
+
+
 
 

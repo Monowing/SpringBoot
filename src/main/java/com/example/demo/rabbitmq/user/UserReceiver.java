@@ -1,6 +1,6 @@
 package com.example.demo.rabbitmq.user;
 
-import com.example.rabbitmq.application.Application;
+import com.example.demo.rabbitmq.application.Application;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

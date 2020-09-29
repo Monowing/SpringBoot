@@ -1,6 +1,6 @@
 package com.example.demo.rabbitmq.direct;
 
-import com.example.rabbitmq.application.Application;
+import com.example.demo.rabbitmq.application.Application;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
