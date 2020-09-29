@@ -17,6 +17,7 @@ SpringBoot的各种整合
 
 
 
+[五、整合rabbitmq](#整合rabbitmq)
 
 # 数据库连接
 
@@ -110,7 +111,7 @@ mybatis:
 
 ```
 
-##4.mapper文件路径
+## 4.mapper文件路径
 
 classpath:mapper/*.xml
 
@@ -222,7 +223,7 @@ import com.example.demo.rabbitmq.user.*;
 
 ```
 
-##2.rabbitmq配置
+## 2.rabbitmq配置
 
 ```yaml
 spring:
