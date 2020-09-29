@@ -12,12 +12,9 @@ SpringBoot的各种整合
 
 [四、整合swagger](#整合swagger)
 
-[五、自定义注解](#自定义注解)
-
-
-
-
 [五、整合rabbitmq](#整合rabbitmq)
+
+[六、自定义注解](#自定义注解)
 
 # 数据库连接
 
