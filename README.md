@@ -6,19 +6,19 @@ SpringBoot的各种整合
 
 [一、数据库连接](#数据库连接)
 
-[二、整合mybatis](#整合mybatis)
+[二、整合MyBatis](#整合MyBatis)
 
-[三、整合redis](#整合redis)
+[三、整合Redis](#整合Redis)
 
-[四、整合swagger](#整合swagger)
+[四、整合Swagger](#整合Swagger)
 
-[五、整合rabbitmq](#整合rabbitmq)
+[五、整合RabbitMQ](#整合RabbitMQ)
 
 [六、自定义注解](#自定义注解)
 
-[七、整合mongodb](#整合mongodb)
+[七、整合MongoDB](#整合MongoDB)
 
-[七、aop](#aop)
+[七、Aop](#Aop)
 
 # 数据库连接
 
@@ -71,7 +71,7 @@ pom添加maven依赖
         </dependency>
 ```
 
-# 整合mybatis
+# 整合MyBatis
 
 [跳转目录](#目录)
 
@@ -137,7 +137,7 @@ classpath:mapper/*.xml
 
 
 
-# 整合redis
+# 整合Redis
 
 [跳转目录](#目录)
 
@@ -198,7 +198,7 @@ pom添加maven依赖
 ```
 
 
-# 整合swagger
+# 整合Swagger
 
 [跳转目录](#目录)
 
@@ -241,7 +241,7 @@ pom添加maven依赖
 查看swagger文档网址:[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 
-# 整合rabbitmq
+# 整合RabbitMQ
 [跳转目录](#目录)
 
 ## 1.源代码路径
@@ -269,7 +269,7 @@ import com.example.demo.rabbitmq.user.*;
 
 ```
 
-## 2.rabbitmq配置
+## 2.RabbitMQ配置
 
 ```yaml
 spring:
@@ -320,7 +320,7 @@ pom添加maven依赖
 
 
 
-# 整合mongodb
+# 整合MongoDB
 
 [跳转目录](#目录)
 
@@ -357,7 +357,7 @@ pom添加maven依赖
     </dependency>
 ```
 
-# aop
+# Aop
 
 [跳转目录](#目录)
 
