@@ -16,6 +16,8 @@ SpringBoot的各种整合
 
 [六、自定义注解](#自定义注解)
 
+[七、整合mongodb](#整合mongodb)
+
 # 数据库连接
 
 [跳转目录](#目录)
@@ -254,4 +256,28 @@ spring:
 
 
 
+# 整合mongodb
 
+## 1.源代码路径
+
+```java
+import com.example.demo.mongodb.*;
+
+// controller文件
+import com.example.demo.mongodb.controller.*;
+// dao文件
+import com.example.demo.mongodb.dao.*;
+// entity文件
+import com.example.demo.mongodb.entity.*;
+
+```
+
+## 2.mongodb配置
+请添加自己的mongodb的地址和表
+```yaml
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mongodb_test
+
+```

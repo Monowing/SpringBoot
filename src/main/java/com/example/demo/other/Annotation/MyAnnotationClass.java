@@ -11,6 +11,7 @@ import com.example.demo.other.Annotation.FieldAnnotation;
  * @Version 1.0
  */
 
+
 @ClassAnnotation(name = "MyAnnotationClass")
 public class MyAnnotationClass {
 

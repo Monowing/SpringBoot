@@ -10,7 +10,7 @@ import java.lang.annotation.RetentionPolicy;
  * @Date 2020/9/29
  * @Version 1.0
  */
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.RUNTIME) // 注解保留多久
 @Documented
 public @interface ClassAnnotation {
 
