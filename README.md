@@ -18,6 +18,8 @@ SpringBoot的各种整合
 
 [七、整合mongodb](#整合mongodb)
 
+[七、aop](#aop)
+
 # 数据库连接
 
 [跳转目录](#目录)
@@ -59,6 +61,15 @@ spring:
     password: 123456
 ```
 
+pom添加maven依赖
+```xml
+<!--mysql数据库驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+```
 
 # 整合mybatis
 
@@ -100,6 +111,15 @@ mybatis:
     map-underscore-to-camel-case: true
 ```
 
+```xml
+
+<!--mybatis 依赖-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.3</version>
+        </dependency>
+```
 ## 3.启动application添加扫描
 
 ```java
@@ -113,6 +133,8 @@ mybatis:
 ## 4.mapper文件路径
 
 classpath:mapper/*.xml
+
+
 
 
 # 整合redis
@@ -165,6 +187,15 @@ spring:
 
 ```
 
+pom添加maven依赖
+```xml
+
+<!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+```
 
 
 # 整合swagger
@@ -188,8 +219,24 @@ import com.example.demo.swagger.config.*;
 import com.example.demo.swagger.entity.*;
 
 ```
+## 2.配置
 
-## 2.网页地址
+pom添加maven依赖
+```xml
+<!-- swagger 依赖-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+```
+
+## 3.网页地址
 
 查看swagger文档网址:[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
@@ -233,6 +280,23 @@ spring:
     password: guest
 ```
 
+pom添加maven依赖
+```xml
+        
+        <!-- rabbitmq依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+```
+
 # 自定义注解
 
 [跳转目录](#目录)
@@ -258,6 +322,8 @@ spring:
 
 # 整合mongodb
 
+[跳转目录](#目录)
+
 ## 1.源代码路径
 
 ```java
@@ -273,11 +339,53 @@ import com.example.demo.mongodb.entity.*;
 ```
 
 ## 2.mongodb配置
+
 请添加自己的mongodb的地址和表
 ```yaml
 spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/mongodb_test
+
+```
+pom添加maven依赖
+```xml
+    <!-- MongoDB-->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-mongodb</artifactId>
+    </dependency>
+```
+
+# aop
+
+[跳转目录](#目录)
+
+添加aop的token验证操作
+
+## 1.源代码路径
+```java
+import com.example.demo.token.*;
+
+//controller文件夹
+import com.example.demo.token.controller.*;
+//Annotation文件夹
+import com.example.demo.token.Annotation.*;
+//aspect文件夹
+import com.example.demo.token.aspect.*;
+
+```
+
+## 2.配置
+
+pom添加maven依赖
+```xml
+
+    <!--引入AOP依赖-->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+
 
 ```
